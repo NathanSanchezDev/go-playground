@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
+
+	"github.com/NathanSanchezDev/go-playground/calculator"
 )
 
 const (
@@ -19,7 +21,7 @@ func DecideExecutionType() {
 
 	switch executionType {
 	case InvestmentCalculator:
-		RunInvestmentCalculator()
+		calculator.RunInvestmentCalculator()
 	case ProfitCalculator:
 		fmt.Println("Adding soon")
 	default:
